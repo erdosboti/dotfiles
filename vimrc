@@ -1,5 +1,17 @@
 " plugins I use -------------------------------
-" pathogen
+"
+" pathogen ==========================================================================================
+" 
+" mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+" curl -Sso ~/.vim/autoload/pathogen.vim \
+"     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+" ===================================================================================================
+"
+" ########## as git submodules ######################################################################
+" see http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+" and http://www.nils-haldenwang.de/frameworks-and-tools/git/how-to-ignore-changes-in-git-submodules
+" ===================================================================================================
+" 
 " rails.vim
 " vim-airline
 " nerdtree
@@ -7,6 +19,10 @@
 " fugitive
 " ctrlp
 " indentline
+" ack.vim needs sudo apt-get install ack-grep and for settings .ackrc file
+" ###################################################################################################
+"
+" ctags not a plugin needs sudo apt-get install exuberant-ctags
 "----------------------------------------------
 
 " pathogen plugin -------------------------------------------------------
