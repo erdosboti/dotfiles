@@ -20,6 +20,8 @@
 " ctrlp
 " indentline
 " ack.vim needs sudo apt-get install ack-grep and for settings .ackrc file
+" vim-coffee-script
+" vim-cucumber
 " ###################################################################################################
 "
 " ctags not a plugin needs sudo apt-get install exuberant-ctags
@@ -61,6 +63,9 @@ set nu
 " for searching: instant search and highlighting
 set incsearch
 set hlsearch
+" search: case only matters with mixed case expressions
+set ignorecase
+set smartcase
 
 " do not wrap lines
 set nowrap
