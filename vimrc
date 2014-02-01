@@ -22,6 +22,7 @@
 " ack.vim needs sudo apt-get install ack-grep and for settings .ackrc file
 " vim-coffee-script
 " vim-cucumber
+" delimitMate
 " ###################################################################################################
 "
 " ctags not a plugin needs sudo apt-get install exuberant-ctags
