@@ -76,8 +76,20 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" color scheme
+colorscheme railscasts_256
+
+" show command characters under status line
+set showcmd
+
+" dash completion for css keywords
+set iskeyword +=-
+
+" eol characters and tabs to be shown ':set list' to show and ':set nolist' to hide
+set listchars=tab:▸\ ,eol:¬
+
 " remap leader
 let mapleader=","
 
-" color scheme
-colorscheme railscasts_256
+" leader a to ack for word under cursor
+noremap <Leader>a :Ack <cword><cr>
