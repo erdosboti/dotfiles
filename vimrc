@@ -23,6 +23,7 @@
 " vim-coffee-script
 " vim-cucumber
 " delimitMate
+" scss-syntax
 " ###################################################################################################
 "
 " ctags not a plugin needs sudo apt-get install exuberant-ctags
@@ -90,8 +91,8 @@ set listchars=tab:▸\ ,eol:¬
 
 " set proper filetypes on new files and open files
 autocmd BufRead,BufNewFile *.haml set ft=haml
-autocmd BufRead,BufNewFile *.scss set ft=scss.css
-autocmd BufRead,BufNewFile *.sass set ft=sass.css
+"autocmd BufRead,BufNewFile *.scss set ft=scss.css
+"autocmd BufRead,BufNewFile *.sass set ft=sass.css
 
 " remap leader
 let mapleader=","
