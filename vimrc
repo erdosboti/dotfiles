@@ -88,6 +88,11 @@ set iskeyword +=-
 " eol characters and tabs to be shown ':set list' to show and ':set nolist' to hide
 set listchars=tab:▸\ ,eol:¬
 
+" set proper filetypes on new files and open files
+autocmd BufRead,BufNewFile *.haml set ft=haml
+autocmd BufRead,BufNewFile *.scss set ft=scss.css
+autocmd BufRead,BufNewFile *.sass set ft=sass.css
+
 " remap leader
 let mapleader=","
 
