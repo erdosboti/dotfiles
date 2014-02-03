@@ -51,6 +51,9 @@ endif
 " export LC_ALL=en_US.UTF8 and export LANG=en_US.UTF8
 let g:airline_powerline_fonts = 1 
 set encoding=utf-8
+
+" lower timeout when leaving insert mode
+set ttimeoutlen=50
 "------------------------------------------------------------------------
 
 " syntax highlighting
