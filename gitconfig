@@ -1,0 +1,16 @@
+[user]
+	name = Botond Erdos
+	email = botond@appmaintainers.com
+[merge]
+#	tool = meld
+[core]
+#	editor = gedit -w
+[alias]
+	co = checkout
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+[color]
+	ui = true
+[diff]
+# external = git_diff_wrapper
+[pager]
+  diff =

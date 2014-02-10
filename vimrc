@@ -56,6 +56,12 @@ set encoding=utf-8
 set ttimeoutlen=50
 "------------------------------------------------------------------------
 
+" Sane Ignore For ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$\|$\.png$\|\.PNG$\|\.jpg$\|\.JPG$\|\.gif$\|\.GIF$'
+  \ }
+
 " syntax highlighting
 syntax on
 

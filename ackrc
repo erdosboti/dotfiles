@@ -1,4 +1,8 @@
 --type-add=ruby=.haml,.rake
 --type-add=css=.less,.scss,.sass
 --type-add=js=.coffee
+--ignore-dir=vendor
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=doc
 --smart-case
