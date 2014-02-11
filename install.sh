@@ -1,6 +1,6 @@
 #!/bin/bash
 for i in $(ls); do
-  if [ $i != install.sh ] && [ $i != README.md ] && [ $i != bashrc ]; then
+  if [ $i != install.sh ] && [ $i != README.md ]; then
     echo "Creating symbolic link for $i"
     if [ ! -L ~/.${i} ]; then
       mv ~/.${i} ~/.${i}_old
