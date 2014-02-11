@@ -2,7 +2,8 @@
 for i in $(ls); do
   if [ $i != install.sh ] && [ $i != README.md ] && [ $i != bashrc ]; then
     echo "Creating symbolic link for $i"
-    if [ ! -f ~/.${i} ]; then
+    if [ ! -L ~/.${i} ]; then
+      mv ~/.${i} ~/.${i}_old
       ln -s ~/dotfiles/${i} ~/.${i}
       echo "done"
     else
