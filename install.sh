@@ -7,7 +7,7 @@ for i in $(ls); do
       ln -s ~/dotfiles/${i} ~/.${i}
       echo "done"
     else
-      echo ".$i already exists"
+      echo ".$i already symlinked"
     fi
   fi
 done
