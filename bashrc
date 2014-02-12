@@ -87,6 +87,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias be='bundle exec'
+alias vssh='vagrant ssh -- -Y'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
