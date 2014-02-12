@@ -8,9 +8,12 @@
 [alias]
 	co = checkout
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	dt = difftool
 [color]
 	ui = true
 [diff]
 # external = git_diff_wrapper
 [pager]
   diff =
+[diff]
+	tool = vimdiff
