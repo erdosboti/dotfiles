@@ -109,9 +109,15 @@ let mapleader=","
 " leader a to ack for word under cursor
 noremap <Leader>a :Ack <cword><cr>
 
+" remapping esc key
+inoremap jj <esc>
+cnoremap jj <c-c>
+vnoremap v <esc>
+
 noremap <Leader>af :Ack ""<left>
 noremap <Leader>gs :Gstatus<cr>
 noremap <Leader>gd :Gdiff<cr>
 noremap <Leader>gc :Gcommit<cr>
+noremap <Leader>gb :Gblame<cr>
 noremap <Leader>bb :!bundle install<cr>
 noremap <Leader>rr :Rake routes<cr>
