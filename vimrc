@@ -114,3 +114,4 @@ noremap <Leader>gs :Gstatus<cr>
 noremap <Leader>gd :Gdiff<cr>
 noremap <Leader>gc :Gcommit<cr>
 noremap <Leader>bb :!bundle install<cr>
+noremap <Leader>rr :Rake routes<cr>
