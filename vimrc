@@ -86,6 +86,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" set backup dir
+set backupdir=~/tmp
+set directory=~/tmp
+
 " color scheme
 colorscheme railscasts_256
 
