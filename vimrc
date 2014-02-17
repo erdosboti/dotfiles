@@ -87,8 +87,8 @@ set shiftwidth=2
 set expandtab
 
 " set backup dir
-set backupdir=~/tmp
-set directory=~/tmp
+set backupdir=~/.vim/.tmp
+set directory=~/.vim/.tmp
 
 " color scheme
 colorscheme railscasts_256
