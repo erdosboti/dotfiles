@@ -125,3 +125,4 @@ noremap <Leader>gc :Gcommit<cr>
 noremap <Leader>gb :Gblame<cr>
 noremap <Leader>bb :!bundle install<cr>
 noremap <Leader>rr :Rake routes<cr>
+noremap <Leader>nt :NERDTreeToggle<cr>
