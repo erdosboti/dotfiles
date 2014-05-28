@@ -24,6 +24,7 @@
 " vim-cucumber
 " delimitMate
 " scss-syntax
+" utilsnip
 " ###################################################################################################
 "
 " ctags not a plugin needs sudo apt-get install exuberant-ctags

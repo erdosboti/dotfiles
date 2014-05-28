@@ -17,3 +17,5 @@
   diff =
 [diff]
 	tool = vimdiff
+[heroku]
+	account = work
