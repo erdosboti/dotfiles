@@ -24,7 +24,7 @@
 " vim-cucumber
 " delimitMate
 " scss-syntax
-" utilsnip
+" utilsnip                snippets are also added as submodules from git@github.com:honza/vim-snippets.git
 " ###################################################################################################
 "
 " ctags not a plugin needs sudo apt-get install exuberant-ctags
