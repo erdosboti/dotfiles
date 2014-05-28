@@ -127,3 +127,4 @@ noremap <Leader>gb :Gblame<cr>
 noremap <Leader>bb :!bundle install<cr>
 noremap <Leader>rr :Rake routes<cr>
 noremap <Leader>nt :NERDTreeToggle<cr>
+inoremap <C-L> <Space>=><Space>
