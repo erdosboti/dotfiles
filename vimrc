@@ -97,6 +97,10 @@ colorscheme railscasts_256
 " show command characters under status line
 set showcmd
 
+" try to figure out file type from first 5 comment line
+set modeline
+set modelines=5
+
 " dash completion for css keywords
 set iskeyword +=-
 
