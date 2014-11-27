@@ -112,6 +112,9 @@ autocmd BufRead,BufNewFile *.haml set ft=haml
 "autocmd BufRead,BufNewFile *.scss set ft=scss.css
 "autocmd BufRead,BufNewFile *.sass set ft=sass.css
 
+" remove trailing whitespaces in ruby files on saving 
+autocmd BufWritePre *.rb :%s/\s\+$//e
+
 " remap leader
 let mapleader=","
 
