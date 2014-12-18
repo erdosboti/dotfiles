@@ -1,40 +1,32 @@
-" plugins I use -------------------------------
-"
-" pathogen ==========================================================================================
-" 
-" mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-" curl -Sso ~/.vim/autoload/pathogen.vim \
-"     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-" ===================================================================================================
-"
-" ########## as git submodules ######################################################################
-" see http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
-" and http://www.nils-haldenwang.de/frameworks-and-tools/git/how-to-ignore-changes-in-git-submodules
-" ===================================================================================================
-" 
-" rails.vim
-" vim-airline
-" nerdtree
-" nerdcommenter
-" fugitive
-" ctrlp
-" indentline
-" ack.vim needs sudo apt-get install ack-grep and for settings .ackrc file
-" vim-coffee-script
-" vim-cucumber
-" delimitMate
-" scss-syntax
-" utilsnip                snippets are also added as submodules from git@github.com:honza/vim-snippets.git
-" ###################################################################################################
-"
-" ctags not a plugin needs sudo apt-get install exuberant-ctags
-"----------------------------------------------
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" pathogen plugin -------------------------------------------------------
-" for pathogen
-execute pathogen#infect()
-"------------------------------------------------------------------------
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
 
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'mileszs/ack.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'othree/html5.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'bling/vim-airline'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'slim-template/vim-slim'
+call vundle#end()
+
+" filetype recognition
+filetype plugin indent on    " required
 
 " vim-airline plugin ----------------------------------------------------
 " statusline always visible
@@ -57,6 +49,9 @@ set encoding=utf-8
 set ttimeoutlen=50
 "------------------------------------------------------------------------
 
+" use silver_searcher instead of ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Sane Ignore For ctrlp
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
@@ -65,9 +60,6 @@ let g:ctrlp_custom_ignore = {
 
 " syntax highlighting
 syntax on
-
-" filetype recognition
-filetype plugin indent on
 
 " linenumbers on
 set nu
@@ -122,9 +114,9 @@ let mapleader=","
 noremap <Leader>a :Ack <cword><cr>
 
 " remapping esc key
-inoremap jj <esc>
-cnoremap jj <c-c>
-vnoremap v <esc>
+"inoremap jj <esc>
+"cnoremap jj <c-c>
+"vnoremap v <esc>
 
 noremap <Leader>af :Ack ""<left>
 noremap <Leader>gs :Gstatus<cr>
