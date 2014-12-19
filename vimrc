@@ -61,6 +61,9 @@ let g:ctrlp_custom_ignore = {
 " syntax highlighting
 syntax on
 
+" syntax based completion is on
+set completefunc=syntaxcomplete#Complete
+
 " linenumbers on
 set nu
 
