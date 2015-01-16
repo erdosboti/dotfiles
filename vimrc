@@ -23,6 +23,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
+Plugin 'erdosboti/myvimcolors'
 call vundle#end()
 
 " filetype recognition
