@@ -16,8 +16,8 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+"Plugin 'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fugitive'
@@ -66,6 +66,11 @@ syntax on
 
 " syntax based completion is on
 set completefunc=syntaxcomplete#Complete
+autocmd FileType *
+  \ if &omnifunc != '' |
+  \   call SuperTabChain(&omnifunc, "<c-p>") |
+  \   call SuperTabSetDefaultCompletionType("context") |
+  \ endif
 
 " linenumbers on
 set nu
