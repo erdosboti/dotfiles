@@ -131,4 +131,29 @@ noremap <Leader>gb :Gblame<cr>
 noremap <Leader>bb :!bundle install<cr>
 noremap <Leader>rr :Rake routes<cr>
 noremap <Leader>nt :NERDTreeToggle<cr>
+noremap <Leader>r :Rake<cr>
+noremap <Leader>r. :.Rake<cr>
+noremap <Leader>rt :Rake test<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MULTIPURPOSE TAB KEY
+" Indent if we're at the beginning of a line. Else, do completion.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <expr> <tab> InsertTabWrapper()
+inoremap <s-tab> <c-n>
+
+"move around
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
 inoremap <C-L> <Space>=><Space>
