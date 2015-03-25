@@ -25,6 +25,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'erdosboti/myvimcolors'
+Plugin 'ervandew/supertab'
 call vundle#end()
 
 " filetype recognition
@@ -134,21 +135,6 @@ noremap <Leader>nt :NERDTreeToggle<cr>
 noremap <Leader>r :Rake<cr>
 noremap <Leader>r. :.Rake<cr>
 noremap <Leader>rt :Rake test<cr>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" MULTIPURPOSE TAB KEY
-" Indent if we're at the beginning of a line. Else, do completion.
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-inoremap <expr> <tab> InsertTabWrapper()
-inoremap <s-tab> <c-n>
 
 "move around
 nnoremap <c-j> <c-w>j
